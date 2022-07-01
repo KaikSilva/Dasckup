@@ -9,7 +9,7 @@ import Sales from "./pages/Sales";
 function Routers() {
 
     return (
-        <Router>
+        <Router basename={process.env.PUBLIC_URL}>
             <Header/>
             <Routes>
 
