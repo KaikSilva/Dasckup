@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Dasckup/static/css/main.6d7c2570.css",
+    "main.js": "/Dasckup/static/js/main.c64b9a25.js",
+    "index.html": "/Dasckup/index.html",
+    "main.6d7c2570.css.map": "/Dasckup/static/css/main.6d7c2570.css.map",
+    "main.c64b9a25.js.map": "/Dasckup/static/js/main.c64b9a25.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6d7c2570.css",
+    "static/js/main.c64b9a25.js"
+  ]
+}
