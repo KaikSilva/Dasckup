@@ -1,0 +1,36 @@
+.product{
+
+  &__click{
+    padding: 8px;
+    cursor:pointer;
+    height: 36px;
+    margin-top: 0.25rem;
+  }
+
+  background: #f3f4f7;
+  border: 1px solid #ccd3d9;
+  border-top: initial;
+  border-radius: 0px 0px 3px 3px;
+
+  &__list{
+    max-height: 176px;
+    overflow: auto;
+
+    li{
+      padding: 8px;
+      font-weight: 600;
+      font-size:12px;
+
+    }:hover{
+      background: var(--bs-gradient-primary);
+      color: var(--bs-primary);
+      cursor:pointer;
+    }
+  }
+
+  &__search{
+    background: #f3f4f7;
+    border: 1px solid #ccd3d9;
+    margin-top: -2px;
+  }
+}

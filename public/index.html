@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="light-theme" lang="en">
 <head>
   <meta charset="utf-8" />
   <link rel="icon" href="/logo-dasckup.png" />
@@ -7,11 +7,69 @@
   <meta name="theme-color" content="#000000" />
   <meta name="description" content="Web site created using create-react-app" />
   <title>Dasckup</title>
-  <script defer="defer" src="/static/js/main.b56768f6.js"></script>
-  <link href="/static/css/main.8c216f78.css" rel="stylesheet" />
+  <style>
+    html{height:100%}body{height:100%;margin:0}#root{height:100%}.loader-container{background:#0097dc;min-height:100%;width:100%;display:flex;justify-content:center;align-items:center;color:#fff}.lds-ellipsis{display:inline-block;position:relative;width:80px;height:80px}.lds-ellipsis div{position:absolute;top:33px;width:13px;height:13px;border-radius:50%;background:#fff;animation-timing-function:cubic-bezier(0,1,1,0)}.lds-ellipsis div:nth-child(1){left:8px;animation:lds-ellipsis1 .6s infinite}.lds-ellipsis div:nth-child(2){left:8px;animation:lds-ellipsis2 .6s infinite}.lds-ellipsis div:nth-child(3){left:32px;animation:lds-ellipsis2 .6s infinite}.lds-ellipsis div:nth-child(4){left:56px;animation:lds-ellipsis3 .6s infinite}@keyframes lds-ellipsis1{0%{transform:scale(0)}100%{transform:scale(1)}}@keyframes lds-ellipsis3{0%{transform:scale(1)}100%{transform:scale(0)}}@keyframes lds-ellipsis2{0%{transform:translate(0,0)}100%{transform:translate(24px,0)}}
+  </style>
 </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+    <div id="root">
+      <div class="loader-container">
+        <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+      </div>
+    </div>
   </body>
 </html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://dasckup.com/app/frontend/assets/js/libs.js"></script>
+
+<script>
+  $(function(){
+
+    new PerfectScrollbar(".header-message-list"),
+            new PerfectScrollbar(".header-notifications-list"),
+            $(".mobile-search-icon").on("click", function () {
+              $(".search-bar").addClass("full-search-bar"), $(".page-wrapper").addClass("search-overlay");
+            }),
+            $(".search-close").on("click", function () {
+              $(".search-bar").removeClass("full-search-bar"), $(".page-wrapper").removeClass("search-overlay");
+            }),
+            $(".mobile-toggle-menu").on("click", function () {
+              $(".wrapper").addClass("toggled");
+            }),
+
+      $(".toggle-icon").click(function () {
+        $(".wrapper").hasClass("toggled")
+                ? ($(".wrapper").removeClass("toggled"), $(".sidebar-wrapper").unbind("hover"))
+                : ($(".wrapper").addClass("toggled"),
+                        $(".sidebar-wrapper").hover(
+                                function () {
+                                  $(".wrapper").addClass("sidebar-hovered");
+                                },
+                                function () {
+                                  $(".wrapper").removeClass("sidebar-hovered");
+                                }
+                        ));
+      });
+
+        $(window).on("scroll", function () {
+          300 < $(this).scrollTop() ? $(".back-to-top").fadeIn() : $(".back-to-top").fadeOut();
+        }),
+        $(".back-to-top").on("click", function () {
+          return $("html, body").animate({ scrollTop: 0 }, 600), !1;
+        });
+
+      for (
+              var o = window.location,
+                      e = $(".metismenu li a")
+                              .filter(function () {
+                                return this.href == o;
+                              })
+                              .addClass("")
+                              .parent()
+                              .addClass("mm-active");
+              e.is("li");
+      )
+      e = e.parent("").addClass("mm-show").parent("").addClass("mm-active");
+    $("#menu").metisMenu();
+  });
+</script>

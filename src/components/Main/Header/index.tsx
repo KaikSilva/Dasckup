@@ -1,9 +1,17 @@
 import React from "react";
+import {memo} from "react";
+import {NavHeader, SidebarHeader} from "./components";
 
 const Header = () => {
     return (
-        <header>Header aqui</header>
+        <>
+            <SidebarHeader/>
+            <NavHeader/>
+        </>
     );
 }
 
+
 export default Header;
+
+

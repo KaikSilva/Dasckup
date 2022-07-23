@@ -1,0 +1,104 @@
+@media (max-width:813px) {
+    .image-content{
+      display: none;
+    }
+}
+
+.content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+
+  /* Colors generated on: https://colorhunt.co/palette/179481 */
+  background: linear-gradient(133deg, rgba(0,100,148,1) 22%, rgba(50,148,204,1) 44%, rgba(11,62,92,1) 86%);
+  background-size: 300% 300%;
+  animation: colors 8s ease infinite;
+  margin: auto;
+
+  &__copy{
+    font-size: 11px;
+    color: #fff;
+    margin-top: 10px;
+
+    a{
+      text-decoration: revert;
+      color: #fff;
+    }
+  }
+
+  &__fluid{
+
+    display: flex;
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 10%), 0 10px 10px -5px rgb(0 0 0 / 4%);
+
+    &__card{
+
+      &__image{
+        background: #fff;
+        padding: 0px;
+        max-width: 400px;
+        border-radius: 4px 0px 0px 4px;
+
+        img{
+          border-radius: 4px 0px 0px 4px;
+        }
+      }
+
+      &__form{
+        border-radius: 0px 5px 5px 0px;
+        padding: 60px;
+        background: #fff;
+        max-width: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        img{
+          width: 200px;
+          margin-bottom: 20px;
+
+        }
+
+        label{
+          display: flex;
+          justify-content: space-between;
+
+          a {
+            color: var(--bs-primary);
+            font-size: 11px;
+            text-decoration: revert;
+          }
+        }
+
+        &__notHave{
+            color: #525f7f;
+            font-size: 12px;
+            font-weight: 600;
+
+            a{
+              color: var(--bs-primary);
+              text-decoration: revert;
+            }
+        }
+
+      }
+
+    }
+  }
+}
+
+@keyframes colors {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

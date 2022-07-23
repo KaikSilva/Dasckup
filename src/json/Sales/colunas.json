@@ -1,0 +1,36 @@
+[
+  {
+    "label": "Pedido",
+    "field": "pedido",
+    "width": 100,
+    "attributes": {
+      "aria-label": "pedido"
+    }
+  },
+  {
+    "label": "Cliente",
+    "field": "cliente",
+    "width": 100
+  },
+  {
+    "label": "Preço",
+    "field": "preco",
+    "width": 150
+  },
+  {
+    "label": "Consultor",
+    "field": "user",
+    "width": 150
+  },
+  {
+    "label": "Vencimento",
+    "field": "dataVencimento",
+    "width": 150
+  },
+  {
+    "label": "Status",
+    "field": "status",
+    "width": 100
+  }
+]
+

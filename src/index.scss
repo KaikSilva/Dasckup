@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body , #root{
+  background: #f7f8fb;
+  height: 100%;
+}
+
+:root {
+  --bs-blue: #2660ef;
+  --bs-indigo: #6610f2;
+  --bs-purple: #6f42c1;
+  --bs-pink: #d63384;
+  --bs-red: #e62e2e;
+  --bs-orange: #fd7e14;
+  --bs-yellow: #ffc107;
+  --bs-green: #29cc39;
+  --bs-teal: #20c997;
+  --bs-cyan: #0dcaf0;
+  --bs-white: #fff;
+  --bs-gray: #6c757d;
+  --bs-gray-dark: #343a40;
+  --bs-primary: #006390;
+  --bs-sub-primary: #0096db;
+  --bs-secondary: #0096db;
+  --bs-success: #29cc39;
+  --bs-info: #0096db;
+  --bs-warning: #ffc107;
+  --bs-danger: #e62e2e;
+  --bs-light: #f8f9fa;
+  --bs-dark: #212529;
+  --bs-gradient-primary: rgba(51, 194, 255, 0.12);
+  --bs-font-sans-serif: 'Inter', sans-serif;
+  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0))
+}
+
+$theme-colors: (
+  "primary": #006390,
+  "danger": #e62e2e,
+  "secondary": #0096db,
+  "success": #29cc39,
+  "grey": #4a4a4a,
+  "info": #0dcaf0,
+  "warning": #ffc107,
+  "light": #f8f9fa,
+  "dark": #212529,
+);
+
+@import "~bootstrap/scss/bootstrap";
+@import "assets/web/scss/web.app";
+@import "assets/web/scss/web.dark-theme";
+@import "assets/web/scss/web.header-colors";
+@import "assets/web/scss/web.kanban";
+@import "assets/web/plugins/metismenu/css/metisMenu.min.css";
+@import "assets/web/plugins/perfect-scrollbar/css/perfect-scrollbar.css";
+@import "assets/web/plugins/notifications/css/lobibox.min.css";
+
+

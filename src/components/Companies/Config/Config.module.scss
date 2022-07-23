@@ -1,0 +1,30 @@
+
+.menu{
+  padding-right: 0px;
+  width: 100%;
+  margin-bottom: -18px;
+
+
+  li{
+      span{
+        font-size: 13px;
+        font-weight: 600;
+        margin-left: 10px;
+      }
+
+
+    color: #525f7f;
+    padding-bottom: 20px;
+
+    }
+
+    :hover {
+      cursor: pointer;
+      color: #0096db;
+    }
+
+    :focus {
+      color: #0096db;
+    }
+
+  }

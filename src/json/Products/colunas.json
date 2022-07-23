@@ -1,0 +1,28 @@
+[
+  {
+    "label": "Cliente",
+    "field": "cliente",
+    "width": 100
+  },
+  {
+    "label": "Empresa",
+    "field": "company",
+    "width": 150
+  },
+  {
+    "label": "E-mail",
+    "field": "email",
+    "width": 150
+  },
+  {
+    "label": "Celular",
+    "field": "celular",
+    "width": 150
+  },
+  {
+    "label": "Ativo",
+    "field": "active",
+    "width": 100
+  }
+]
+

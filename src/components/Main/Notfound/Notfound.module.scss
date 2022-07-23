@@ -1,0 +1,87 @@
+.content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+
+  /* Colors generated on: https://colorhunt.co/palette/179481 */
+  background: linear-gradient(133deg, var(--bs-primary) 29%, var(--bs-sub-primary) 75%);
+  background-size: 300% 300%;
+  animation: colors 8s ease infinite;
+  margin: auto;
+
+  &__card{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    &__title{
+      font-size: 10rem;
+      color: #fff;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+
+      span{
+        color: rgb(0,100,148);
+      }
+
+      &__sub{
+        color: #fff;
+        font-size: 1.5rem;
+        margin-bottom: 5px;
+        font-weight: 600;
+      }
+    }
+
+    &__text{
+      color: #fff;
+      text-align: center;
+    }
+
+    &__inputs{
+      margin-top: 15px;
+      width: 100%;
+    }
+
+    &__buttons{
+      margin-top:20px;
+    }
+
+  }
+
+  img{
+    position: absolute;
+    top: 0px;
+  }
+
+  footer{
+    position: absolute;
+    bottom: 0px;
+    color: #fff;
+    font-size: 12px;
+    padding: 10px;
+
+    a{
+      color: #fff;
+      text-decoration: underline;
+    }
+  }
+
+
+}
+
+@keyframes colors {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
